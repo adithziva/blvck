@@ -1,8 +1,28 @@
+<?php 
+function get_download_count($file=null){
+	$counters = './counters/';
+	if($file == null) return 0;
+	$count = 0;
+	if(file_exists($counters.md5($file).'_counter.txt')){
+		$fp = fopen($counters.md5($file).'_counter.txt', "r");
+		$count = fread($fp, 1024);
+		fclose($fp);
+	}else{
+		$fp = fopen($counters.md5($file).'_counter.txt', "w+");
+		fwrite($fp, $count);
+		fclose($fp);
+	}
+	return $count;
+}
+?>
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+</head>
 
-<!DOCTYPE html>
-<html lang="en">
-
-
+<body>
 <head>
 
   <meta charset="utf-8">
@@ -40,13 +60,15 @@
 
   <!-- Page Wrapper -->
   <div id="wrapper">
-
+                                      
+                            
     <!-- Sidebar -->
     
     <!-- End of Sidebar -->
 
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
+
 
       <!-- Main Content -->
       <div id="content">
@@ -58,11 +80,12 @@
         </nav>
         <!-- End of Topbar -->
 
+
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          
+
 
           <!-- Content Row -->
           
@@ -75,26 +98,24 @@
           <div class="row">
 
             <!-- Content Column -->
-            
-
+            
             <div class="col-lg-12 mb-4">
 
               <!-- Illustrations -->
               <div class="card shadow mb-4">
-                <hr>
+<hr>
+                
                 <div class="card-body">
                   <div class="text-center">
-                    <img class="img-fluid px-3 px-sm-4 mt-1 mb-4" src="https://img.icons8.com/material-outlined/192/000000/whatsapp--v1.png" alt="">
+                    <img class="img-fluid px-3 px-sm-4 mt-1 mb-4" src="https://img.icons8.com/material-outlined/192/000000/whatsapp--v1.png" alt="">
                     <p>LOra What'sApp</p>
                     <p>VERSION : 1 </p>
                      <p>Last Update : 28.06.21 </p>
-                      <p class="bottom">45. MB .Apk</p>
-
-                    <a href="Lora v1 What'sApp.apk" class="btn btn-lg btn-success"> DOWNLOAD APK</a><hr>
+                    <p class="bottom">45. MB .Apk</p>
+ <a href="/download.php?file=Lora v1 What'sApp.apk" class="btn btn-lg btn-success"> DOWNLOAD APK</a><hr>
 <p>
-If you need any help contact developer <a href="http://instagram.com/mr_ziva_">Contact me</a>?</p>
-                  <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            
+If you need any help contact developer <a href="http://instagram.com/mr_ziva_">Contact me</a>?</p>
+
 <p align="center">
 
 <script type="text/javascript" src="https://free-hit-counters.net/count/8u89"></script><br>
@@ -102,11 +123,13 @@ If you need any help contact developer <a href="http://instagram.com/mr_ziva_">C
  <a href='https://www.versicherungen.at/eigenheimversicherung/'>Eigenheimversicherung</a> <script type='text/javascript' src='https://www.whomania.com/ctr?id=98fc8853e50b273eb7bd1ab9059f5ae90eca4e4f'></script>
 
 </p>
+</body>
+</html>
+
+
               </div>
                 </div>
               </div>
-
-              
 
             </div>
           </div>
@@ -115,8 +138,10 @@ If you need any help contact developer <a href="http://instagram.com/mr_ziva_">C
         <!-- /.container-fluid -->
 
       </div>
-      <!-- End of Main Content -->    
+      <!-- End of Main Content -->
+
       <!-- Footer -->
+
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
@@ -139,5 +164,5 @@ If you need any help contact developer <a href="http://instagram.com/mr_ziva_">C
 
 
 </body>
-
+</body>
 </html>
