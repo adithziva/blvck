@@ -81,7 +81,8 @@
           <div class="row">
 
             <!-- Content Column -->
-            
+            
+
             <div class="col-lg-12 mb-4">
 
               <!-- Illustrations -->
@@ -90,7 +91,8 @@
                 
                 <div class="card-body">
                   <div class="text-center">
-                    <img class="img-fluid px-3 px-sm-4 mt-1 mb-4" src="https://img.icons8.com/material-outlined/192/000000/whatsapp--v1.png" alt="">
+                    <img class="img-fluid px-3 px-sm-4 mt-1 mb-4" src="https://img.icons8.com/material-outlined/192/000000/whatsapp--v1.png" alt="">
+
                     <p>LOra What'sApp</p>
                     <p>VERSION : 1 </p>
                      <p>Last Update : 28.06.21 </p>
@@ -101,7 +103,8 @@
 <p align="center">
 
 <p>
-If you need any help contact developer <a href="http://instagram.com/mr_ziva_">Contact me</a>?</p>
+If you need any help contact developer <a href="http://instagram.com/mr_ziva_">Contact me</a>?</p>
+
 
 </p>
 </body>
