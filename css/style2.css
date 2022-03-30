@@ -123,7 +123,14 @@ a:hover {
   text-align: centre;
   font-family: 'Caveat', cursive;
 }
+.title {
+  font-size: 25px;
+  font-family: 'Rancho', cursive;
+}
 
+.title span {
+  font-size: 10px;
+}
 
 @media (prefers-color-scheme: dark) {
 
