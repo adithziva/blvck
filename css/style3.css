@@ -96,7 +96,7 @@ body{
     font-size: 0.75rem;
     font-weight: 400;
     padding-bottom: 20px;
-    background-color: #6e6e6e;
+    background-color: #ffffff;
 }
 
 #userPhoto{
@@ -154,7 +154,7 @@ footer {
   width: 100%;
   height: 50px;
   text-align: center;
-  background-color: #ffffff;
+  background-color: red;
  
 }
 footer span1 {
