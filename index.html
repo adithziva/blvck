@@ -10,11 +10,16 @@
 </head>
 
 <body>
+  <div class="musicOn">
+    <audio id="audio" style="display:none;" src="https://adithzivacustompage.000webhostapp.com/Music.mp3" controls loop></audio>
+  </div>
     <div class="container">
     <div class="content">
         <img id="userPhoto" src="images/avatar.jpg" alt="User Photo">
-
-        <h1><a href="#" id="userName" rel="noopener">@MR_ZIVA_</a></h1>
+        
+    <h1 class="title">@mr_ziva_ <br> <span> 𝙏𝙖𝙥 𝙈𝙮 𝙉𝙖𝙢𝙚🖤</span></h1>
+   
+   
         <div id="links">
             <a class="link" href="https://www.facebook.com/sparkarhub/portfolios/ig/mr_ziva_/"  rel="noopener">INSTAGRAM EFFECT</a>
             <a class="link" href="https://telegram.me/adithziva"  rel="noopener">TELEGRAM [CHAT ONLY]</a>
@@ -22,6 +27,15 @@
             <a class="link" href="https://api.whatsapp.com/send/?phone=+916282943771&text=Hi,Bro&app_absent=0" rel="noopener">WHAT'SAPP [CHAT ONLY]</a>
         </div>
           <p>We’re all living in each other’s paranoia</p>
+ <script>
+      let on_off = document.querySelector('.container .title');
+let audio = document.getElementById('audio');
+on_off.onclick = function() {
+  if (audio.paused) { audio.play(); }
+  else { audio.pause(); }
+}
+</script>
+
           <footer>
 <div class="footer">
         <p align="center">Powered By <a href="https://instagram.com/mr_ziva_">Linktree</a></p>
