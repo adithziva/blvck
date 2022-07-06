@@ -54,6 +54,17 @@ on_off.onclick = function() {
 }
  </script>
 
+//New audio player
+
+<audio controls style="display:none;" loop   id="a"  >>
+    <source src="imgs/video.mp3">
+<script>
+window.addEventListener("mouseover",play);
+window.addEventListener("click",play);
+function play() { document.getElementById("a").play();
+}
+</script>
+
 </div>
 
 
