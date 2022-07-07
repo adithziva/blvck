@@ -27,7 +27,11 @@ popup:hover {
   transition-duration: 1s;
 }
 
-
+popuptext:hover {
+  background-color: black;
+  transition-duration: 1s;
+  
+}
 /* The actual popup (appears on top) */
 .popup .popuptext {
   visibility: hidden;
