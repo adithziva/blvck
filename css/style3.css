@@ -5,6 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
+html {
+   -webkit-tap-highlight-color: transparent;
+}
 
 :root {
     --font: 'Roboto Mono', monospace;
