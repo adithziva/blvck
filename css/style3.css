@@ -83,9 +83,6 @@ popuptext:hover {
 
 
 
-body.dark {
-	background: #000000;
-}
 
 .checkbox {
 	opacity: 0;
@@ -131,13 +128,14 @@ body{
     -webkit-font-smoothing: antialiased;
     display: flex;
     flex-direction: column;
- background-color: #000000;
 	align-items: center;
 	justify-content: center;
 	margin: 0;
 	transition: background 0.2s linear;
 
 }
+
+
 
 .container {
     flex: 1 auto;
@@ -168,7 +166,7 @@ body{
     width: 96px;
     height: 96px;
     display: block;
-    margin: 35px auto 20px;
+    margin: 35px auto 1px;
     border-radius: 50%;
     border: solid var(--color) 2px;
 }
@@ -189,6 +187,8 @@ body{
     width: auto;
     display: block;
     margin: 27px auto;
+    background-color: transparent;
+   
 }
 
 .link{
@@ -198,17 +198,32 @@ body{
     font-size: 1rem;
     font-weight: 500;
     border-radius: 5px;
-    border: dashed var(--color) 2px;
+    border: double var(--color) 2px;
     text-align: center;
     text-decoration: none;  
-    color: var(--color);  
+    color: #6e6e6e;  
     word-wrap: break-word;
+    background-color: transparent;
 
 }
+a{
+  color: black;
+}
+
 a:hover {
+  
   background-color: black;
   transition-duration: 1s;
   
+  button {
+  outline: none;
+}
+ 
+ title:hover{
+   background-color: #ffffff;
+   transition-duration: 1s;
+   
+ }
  
 }
 
@@ -241,6 +256,8 @@ footer span2 {
 .title {
   font-size: 25px;
   font-family: 'Rancho', cursive;
+  padding-bottom: 15px;
+  
 }
 
 .title span {
@@ -253,25 +270,4 @@ html, body {
   width: 100%;
   height:100%;
 }
-
-body {
-    background: linear-gradient(-45deg, #ffffff, #ffffff, #000000, #000000);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-
-Resources
 
