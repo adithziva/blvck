@@ -11,7 +11,7 @@ html {
 
 :root {
     --font: 'Roboto Mono', monospace;
-    --color: #6e6e6e;
+    --color: #fff;
 }
 
 * {
@@ -198,10 +198,10 @@ body{
     font-size: 1rem;
     font-weight: 500;
     border-radius: 5px;
-    border: double var(--color) 2px;
+    border:dotted var(--color) 2px;
     text-align: center;
     text-decoration: none;  
-    color: #6e6e6e;  
+    color: var(--color);  
     word-wrap: break-word;
     background-color: transparent;
 
@@ -234,7 +234,7 @@ footer {
   width: 100%;
   height: 60px;
   text-align: center;
-  background-color: #ffffff;
+  background-color: transparent;
  
 }
 footer span1 {
@@ -258,13 +258,13 @@ footer span2 {
   font-family: 'Rancho', cursive;
   padding-bottom: 15px;
   
+  
 }
 
 .title span {
   font-size: 10px;
 }
 
-  
 CSS Result Skip Results Iframe
 html, body {
   width: 100%;
@@ -272,7 +272,7 @@ html, body {
 }
 
 body {
-    background: linear-gradient(-45deg, #ffffff, #ffffff, #000000, #000000);
+    background: linear-gradient(-45deg, #000, #000, #6e6e6e, #6e6e6e);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 }
@@ -288,6 +288,104 @@ body {
         background-position: 0% 50%;
     }
 }
+  
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+
+body {
+  font-family: Lato, sans-serif;
+  --col-deepblue: #000;
+}
+a {
+  color:#fff;
+  text-decoration:none;
+}
+footer {
+  width:100vw;
+  position:fixed;
+  bottom:0px
+}
+footer div {
+  background-color: var(--col-deepblue);
+  margin: -5px 0px 0px 0px;
+  padding:0px;
+  color: #000;
+  text-align:center;
+}
+svg {
+  width:100%;
+  overflow:visible;
+}
+
+.wave {
+  animation: wave 3s linear;
+  animation-iteration-count:infinite;
+  fill: #000;
+}
+.drop {
+  fill: var(--col-deepblue);
+  xfill: #99000055;
+  animation: drop 3.2s linear infinite normal;
+  stroke: var(--col-deepblue);
+  stroke-width:0.5;
+  transform: translateY(25px) ;
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+}
+.drop1 {
+  
+}
+.drop2 {
+  animation-delay: 3s;
+  animation-duration:3s;
+}
+.drop3 {
+  animation-delay: -2s;
+  animation-duration:3.4s;
+}
+.drop4 {
+  animation-delay: 1.7s;
+}
+.drop5 {
+  animation-delay: 2.7s;
+  animation-duration:3.1s;
+}
+.drop6 {
+  animation-delay: -2.1s;
+  animation-duration:3.2s;
+}
+.gooeff {
+    filter: url(#goo);
+}
+#wave2 {
+  animation-duration:5s;
+  animation-direction: reverse;
+  opacity: .6
+}
+#wave3 {
+  animation-duration: 7s;
+  opacity:.3;
+}
+@keyframes drop {
+  0% {
+    transform: translateY(25px); 
+  }
+  30% {
+    transform: translateY(-10px) scale(.1);
+  }
+  30.001% {
+    transform: translateY(25px) scale(1); 
+  }
+  70% {
+    transform: translateY(25px); 
+  }
+  100% { 
+    transform: translateY(-10px) scale(.1);  
+  }
+}
+@keyframes wave {
+  to {transform: translateX(-100%);}
+}
 
 
-Resources
+
+
