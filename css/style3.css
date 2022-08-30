@@ -82,6 +82,23 @@ popuptext:hover {
 }
 
 
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 40px;
+ text-align: center;
+  background-color: transparent;
+  background: #1abc9c;
+  
+}
+#gfg{
+  text-align: center;
+  color:black;
+  font-size: 1rem;
+  font-weight: 500;
+}
 
 
 .checkbox {
