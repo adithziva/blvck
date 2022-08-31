@@ -14,44 +14,16 @@
     <meta property="og:type" content="website"/>
     <meta property="og:updated_time" content="1440432930"/>
     <title>Peace.</title>                                                                   
-    <link rel="stylesheet" href="css/style3.css">
+    <link rel="stylesheet" href="style3.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
 </head>
 
 <body>
 
-<div class="header">
-    
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "107500928564236");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v14.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
-    
-    
-    
-    
+  <div class="header">
  
-     <script>function display_ct7() {
+    <script>function display_ct7() {
 var x = new Date()
 var ampm = x.getHours( ) >= 12 ? ' PM' : ' AM';
 hours = x.getHours( ) % 12;
@@ -82,17 +54,26 @@ mytime=setTimeout('display_ct7()',refresh)
 display_c7()
 </script>
 <p id='ct7'</p>
+</head>
+
+<body onload=display_ct();>
+<span id='ct' ></span>
 </div>
 
-   
+  
+
+
+
+         
+
 
   <div class="musicOn">
-    <audio id="audio" style="display:none;" src="images/jbee (2).mp3" controls loop></audio>
+    <audio id="audio" style="display:none;" src="jbee.mp3" controls loop></audio>
   </div>
 
     <div class="container">
     <div class="content">
-        <img id="userPhoto" src="images/profile.jpg" alt="User Photo">
+        <img id="userPhoto" src="profile.jpg" alt="User Photo">
      
 
     <h1 class="title">Jah18.x</h1>
@@ -108,44 +89,13 @@ function myFunction() {
 </script>
 
 
-
         <div id="links">
-            <a class="link" href="https://www.facebook.com/sparkarhub/portfolios/ig/"  rel="noopener">INSTAGRAM EFFECT</a>
+            <a class="link" href="https://api.whatsapp.com/send/?phone=%2B917306440822&text=Hi+Jah18.x+&type=phone_number&app_absent=0"  rel="noopener">WHATSAPP [CHAT ONLY]</a>
             <a class="link" href="https://opensea.io/"  rel="noopener">OPENSEA [NFT]</a>
             <a class="link" href="https://opensea.io/"  rel="noopener">SNAPCHAT </a>
             <a class="link" href="https://github.com/" rel="noopener">GITHUB [TOOLS]</a>
             <a class="link" href="https://telegram.me/" rel="noopener">TELEGRAM [CHAT ONLY]</a>
                     </div>
-
-
-
-
-
-
-<script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "107500928564236");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v14.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
-
         
  <script>
       let on_off = document.querySelector('.container .title');
@@ -172,9 +122,41 @@ function play() { document.getElementById("a").play();
 
 
 
-
 <footer>
-<svg viewBox="0 0 120 28">
+
+<!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "107500928564236");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v14.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    
+    
+     <svg viewBox="0 0 120 28">
  <defs> 
     <filter id="goo">
       <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur" />
@@ -219,16 +201,19 @@ function play() { document.getElementById("a").play();
     </g>
   </g -->
 
-</svg>
-
+</svg> 
+    
+    
 </footer>
 
 
     </div>
 </div>
 
-  
+
+    
 
 </body>
 
 </html>
+
