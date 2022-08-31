@@ -88,6 +88,36 @@ function myFunction() {
             <a class="link" href="https://github.com/" rel="noopener">GITHUB [TOOLS]</a>
             <a class="link" href="https://telegram.me/" rel="noopener">TELEGRAM [CHAT ONLY]</a>
                     </div>
+
+
+
+
+
+
+<script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "107500928564236");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v14.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
         
  <script>
       let on_off = document.querySelector('.container .title');
